@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <div class="card border-0 shadow-lg rounded-4 p-4" style="background: #fefefe;">
+        <div class="card-body">
+          <h3 class="fw-semibold text-center mb-5">Väder för veckan</h3>
+            {{ table_html|safe }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

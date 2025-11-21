@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+
+      <div class="card border-0 shadow-lg rounded-4 p-4" style="background: #fefefe;">
+        <div class="card-body">
+
+          <h2 class="fw-semibold text-center mb-5">
+            Hej och välkommen!
+          </h2>
+
+          <div class="text-center my-5">
+            <h6 class="text-uppercase text-secondary mb-4" 
+                style="letter-spacing:2px; font-weight:600;">
+              📅 Nästa lektion
+            </h6>
+
+            <h4 class="fw-bold mb-2" style="color:#1a202c;">
+              {{ next_date }}
+            </h4>
+
+            {% for line in next_class %}
+              <p class="text-muted fs-5 mb-1">{{ line }}</p>
+            {% endfor %}
+
+            <div class="mt-3" 
+                 style="width:70px; height:3px; background:#2b6cb0; margin:0 auto; border-radius:2px;">
+            </div>
+          </div>
+
+          <div class="d-flex flex-column align-items-center mb-4">
+            <img src="{{ icon }}" alt="Weather icon" class="rounded" style="max-width:120px;">
+          </div>
+
+          <div class="d-flex flex-column align-items-center mb-4">
+            <h4 class="fw-semibold text-muted mb-3">{{ desc }}</h4>
+          </div>
+
+          <div class="row text-center gx-4 gy-2 mb-4">
+            <div class="col-sm">
+              <div class="p-3 rounded-3 bg-light shadow-sm">
+                🌡️ <strong>Max:</strong> {{ weather_from_api[1] }} °C
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="p-3 rounded-3 bg-light shadow-sm">
+                🌡️ <strong>Min:</strong> {{ weather_from_api[2] }} °C
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="p-3 rounded-3 bg-light shadow-sm">
+                💧 <strong>Nederbörd:</strong> {{ weather_from_api[3] }} mm
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

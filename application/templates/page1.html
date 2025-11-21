@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <div class="card border-0 shadow-lg rounded-4 p-4" style="background: #fefefe;">
+        <div class="card-body">
+          <h3 class="fw-semibold text-center mb-5">Skicka till Discord</h3>
+            <form action="/page1-api" method="post">
+              
+            <div class="mb-3" style="max-width: 250px;">
+            <label for="channel_id" class="form-label">Discord Channel_id</label>
+            <input type="text" class="form-control" id="channel_id" name="channel_id" placeholder="DEMO">
+            </div>
+
+            <div class="mb-3" style="max-width: 250px;">
+            <label for="authorization_code" class="form-label">Authorization_code</label>
+            <input type="text" class="form-control" id="authorization_code" name="authorization_code" placeholder="SEND">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Skicka till Discord</button>
+
+            </form>
+            {% if message %}
+            <div class="alert alert-info text-center mt-3" role="alert">
+            {{ message }}
+            </div>
+            {% endif %}
+            {{data|safe}}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
