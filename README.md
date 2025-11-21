@@ -1,8 +1,5 @@
 ### DevOps Schema App - Open Source ###
 
-
-## Sal http code: "Unauthorized client error” ##
-
 Sal 401 har blivit 99 procent av vår grupps upplevelse av Nackademin.
 När vi inte kunde vara där så tyckte minst en av oss att det var svårt att hitta till rätt sal i morgonstressen.
 Så för att vi vill  missa så lite av all bra information vi får under lektionstid tänkte vi underhålla tanken med att få information om nästa lektion. Och eftersom så vädret är så otrevligt för tillfället ville vi även ha information om förhållandena denna dag. Så vi skapade appen DevOps 27.
