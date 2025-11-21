@@ -40,3 +40,6 @@ python3 app.py # Linux/Mac python app.py # Windows
 Öppna sedan i webbläsaren:
 
 http://127.0.0.1:5000
+
+
+### Edward Broni ###
