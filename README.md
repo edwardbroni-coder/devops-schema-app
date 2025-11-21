@@ -15,9 +15,9 @@ Välkomna att ladda ner eller skapa en git.
 
 För att köra projektet lokalt behöver du först klona repot och gå in i projektmappen:
 
-git clone
+git clone https://github.com/edwardbroni-coder/devops-schema-app.git
 
-cd handelse-app
+cd devops-schema-app
 
 Skapa sedan en virtuell miljö och aktivera den:
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 kör sedan skriptet genom att skriva :
 
-python3 run.py # Linux/Mac python run.py # Windows
+python3 app.py # Linux/Mac python app.py # Windows
 
 Öppna sedan i webbläsaren:
 
