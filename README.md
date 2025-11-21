@@ -9,3 +9,34 @@ Open Source. Konkurrens är hälsosamt, men den består ju i verkligheten  framf
 Alla är i DevOps25 är alltså välkomna att bidra och uppdatera denna kod.
 Har någon ett coolt front-end, user-system med inloggningsfunktion eller en databas-ide? 
 Välkomna att ladda ner eller skapa en git.
+
+
+- Instruktioner
+
+För att köra projektet lokalt behöver du först klona repot och gå in i projektmappen:
+
+git clone
+
+cd handelse-app
+
+Skapa sedan en virtuell miljö och aktivera den:
+
+python3 -m venv venv
+
+source venv/bin/activate # Linux/Mac
+
+python -m venv venv
+
+venv\Scripts\activate # Windows
+
+Installera alla moduller från requirements.txt:
+
+pip install -r requirements.txt
+
+kör sedan skriptet genom att skriva :
+
+python3 run.py # Linux/Mac python run.py # Windows
+
+Öppna sedan i webbläsaren:
+
+http://127.0.0.1:5000
